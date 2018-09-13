@@ -1,0 +1,5 @@
+select id,age,wc.name as workclass_name,ed.name as education_name,education_num,ms.name as marital_status,oc.name as occupation,rc.name as race,sx.name as sex,capital_gain,capital_loss,hours_week,co.name as country,over_50k from records as rd INNER JOIN workclasses as wc ON rd.workclass_id = wc.id INNER JOIN education_levels as ed ON rd.education_level_id = ed.id INNER JOIN 
+marital_statuses as ms ON rd.marital_status_id = ms.id INNER JOIN occupations as oc ON rd.occupation_id = oc.id INNER JOIN races as rc ON rd.race_id = rc.id INNER JOIN sexes as sx ON 
+rd.sex_id = sx.id INNER JOIN countries as co ON rd.country_id = co.id where over_50K=1;
+
+select over_50K from records where id=1

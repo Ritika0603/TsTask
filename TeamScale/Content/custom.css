@@ -1,0 +1,15 @@
+﻿body {
+    background-color: #e9ecef;
+        overflow-x: hidden;
+}
+.apidetails
+{
+    display:none;
+}
+.table-bordered {
+    border: 16px solid #dee2e6 !important;
+}
+.apisalary
+{
+    display:none;
+}
